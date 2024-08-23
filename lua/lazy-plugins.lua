@@ -28,7 +28,7 @@ require('lazy').setup({
   require 'plugins/telescope',
   require 'plugins/todo-comments',
   require 'plugins/treesitter',
-  require 'plugins/web-dev-icons',
+  require 'plugins/web-devicons',
   require 'plugins/which-key',
 
 }, {
