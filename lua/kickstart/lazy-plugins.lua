@@ -30,7 +30,6 @@ require('lazy').setup({
   require 'kickstart/plugins/treesitter',
   require 'kickstart/plugins/which-key',
 
-  -- vim: ts=2 sts=2 sw=2 et
 }, {
     ui = {
       -- If you are using a Nerd Font: set icons to an empty table which will use the
@@ -53,3 +52,5 @@ require('lazy').setup({
       icons = {},
     },
   })
+
+  -- vim: ts=2 sts=2 sw=2 et
