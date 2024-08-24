@@ -1,5 +1,6 @@
 return {
-  { -- Autoformat
+  {
+    -- Autoformat
     'stevearc/conform.nvim',
     lazy = false,
     keys = {
@@ -38,3 +39,4 @@ return {
   },
 }
 -- vim: ts=2 sts=2 sw=2 et
+

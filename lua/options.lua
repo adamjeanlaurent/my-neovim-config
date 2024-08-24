@@ -1,19 +1,12 @@
--- [[ Setting globals ]] Set <space> as the leader key
 --  NOTE: Must happen before plugins are loaded (otherwise wrong leader will be used)
 vim.g.mapleader = ' '
 vim.g.maplocalleader = ' '
 
--- Set to true if you have a Nerd Font installed and selected in the terminal
 vim.g.have_nerd_font = true
 
--- disable netrw
+-- disable netrw, I prefer neo-tree
 vim.g.loaded_netrw = 1
 vim.g.loaded_netrwPlugin = 1
-
--- [[ Setting options ]]
--- See `:help {vim.opt}`
--- NOTE: You can change these options as you wish!
---  For more options, you can see `:help option-list`
 
 -- 4 space indenting
 vim.opt.tabstop = 4
@@ -80,11 +73,8 @@ vim.opt.cursorline = true
 -- Minimal number of screen lines to keep above and below the cursor.
 vim.opt.scrolloff = 10
 
--- [[ Basic Keymaps ]]
---  See `:help vim.keymap.set()`
---
-
 -- Set highlight on search, but clear on pressing <Esc> in normal mode
 vim.opt.hlsearch = true
 
 -- vim: ts=2 sts=2 sw=2 et
+
