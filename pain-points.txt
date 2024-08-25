@@ -1,0 +1,15 @@
+Pain Points:
+1. Markdown supports (mardown-preview.nvim)
+2. Which key issues (have conflicts)
+3. Git and edited icons look weird in neotree
+4. Want to able to closer buffers easier (would be cool to do this in telescope)
+
+Things to Learn:
+1. Telescope
+2. Mason
+3. Treesitter
+4. quick fix lists
+5. splitting screens
+6. tmux
+7. jump list
+8. registers
