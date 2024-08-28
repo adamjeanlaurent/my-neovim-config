@@ -7,6 +7,7 @@ require('lazy').setup({
   require 'plugins/comment',
   require 'plugins/conform',
   require 'plugins/diffview',
+  require 'plugins/git-blame',
   require 'plugins/gitsigns',
   require 'plugins/harpoon',
   require 'plugins/indent-blankline',
