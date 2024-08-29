@@ -10,7 +10,7 @@ require('lazy').setup({
   require 'plugins/git-blame',
   require 'plugins/gitsigns',
   require 'plugins/harpoon',
-  require 'plugins/indent-blankline',
+  -- require 'plugins/indent-blankline', add back if you want tabs
   require 'plugins/lspconfig',
   require 'plugins/mini',
   require 'plugins/neo-tree',
