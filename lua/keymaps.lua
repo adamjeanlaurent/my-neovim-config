@@ -9,6 +9,7 @@ vim.keymap.set('n', '<leader>bc', '<cmd>bd<CR>')
 -- git view
 vim.keymap.set('n', '<leader>gvo', '<cmd>DiffviewOpen<CR>', { desc = 'Git View Open' })
 vim.keymap.set('n', '<leader>gvc', '<cmd>DiffviewClose<CR>', { desc = 'Git View Close' })
+vim.keymap.set('n', '<leader>gvfh', '<cmd>DiffViewFileHistory<CR>', { desc = 'Git View File History' })
 
 -- Diagnostic keymaps
 vim.keymap.set('n', '[d', vim.diagnostic.goto_prev, { desc = 'Go to previous [D]iagnostic message' })
@@ -64,4 +65,3 @@ vim.api.nvim_create_autocmd('TextYankPost', {
 -- })
 
 -- vim: ts=2 sts=2 sw=2 et
-
