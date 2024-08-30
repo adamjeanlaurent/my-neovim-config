@@ -127,6 +127,7 @@ return {
       local servers = {
         clangd = {},
         gopls = {},
+
         -- pyright = {},
         -- rust_analyzer = {},
         -- ... etc. See `:help lspconfig-all` for a list of all the pre-configured LSPs
@@ -171,6 +172,22 @@ return {
       })
       require('mason-tool-installer').setup { ensure_installed = ensure_installed }
 
+      require('lspconfig').gopls.setup {
+        settings = {
+          gopls = {
+            hints = {
+              rangeVariableTypes = true,
+              parameterNames = true,
+              constantValues = true,
+              assignVariableTypes = true,
+              compositeLiteralFields = true,
+              compositeLiteralTypes = true,
+              functionTypeParameters = true,
+            },
+          },
+        },
+      }
+
       require('mason-lspconfig').setup {
         handlers = {
           function(server_name)
@@ -188,4 +205,3 @@ return {
 }
 
 -- vim: ts=2 sts=2 sw=2 et
-
