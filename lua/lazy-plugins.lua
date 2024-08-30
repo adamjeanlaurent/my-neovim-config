@@ -14,6 +14,7 @@ require('lazy').setup({
   require 'plugins/lspconfig',
   require 'plugins/mini',
   require 'plugins/neo-tree',
+  require 'plugins/noice',
   require 'plugins/nvim-cmp',
   require 'plugins/telescope',
   require 'plugins/todo-comments',
