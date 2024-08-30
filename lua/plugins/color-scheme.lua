@@ -8,6 +8,7 @@ return {
     -- 'vague2k/vague.nvim',
     -- 'tokyonight.nvim',
     -- 'rebelot/kanagawa.nvim',
+    -- 'asilvam133/rose-pine.nvim',
     priority = 1000, -- Make sure to load this before all the other start plugins.
     init = function()
       -- vim.cmd.colorscheme 'gruv-vsassist'
@@ -17,6 +18,7 @@ return {
       -- vim.cmd.colorscheme 'vague'
       -- vim.cmd.colorscheme 'tokyonight'
       -- vim.cmd.colorscheme 'kanagawa'
+      -- vim.cmd.colorscheme 'rose-pine'
 
       -- rmeove background to make it clear
       -- vim.cmd 'highlight Normal guibg=NONE ctermbg=NONE'

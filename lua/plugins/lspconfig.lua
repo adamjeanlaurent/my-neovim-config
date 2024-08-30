@@ -172,22 +172,6 @@ return {
       })
       require('mason-tool-installer').setup { ensure_installed = ensure_installed }
 
-      require('lspconfig').gopls.setup {
-        settings = {
-          gopls = {
-            hints = {
-              rangeVariableTypes = true,
-              parameterNames = true,
-              constantValues = true,
-              assignVariableTypes = true,
-              compositeLiteralFields = true,
-              compositeLiteralTypes = true,
-              functionTypeParameters = true,
-            },
-          },
-        },
-      }
-
       require('mason-lspconfig').setup {
         handlers = {
           function(server_name)
