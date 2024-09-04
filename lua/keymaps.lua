@@ -9,7 +9,7 @@ vim.keymap.set('n', '<leader>bc', '<cmd>bd<CR>')
 -- git view
 vim.keymap.set('n', '<leader>gvo', '<cmd>DiffviewOpen<CR>', { desc = 'Git View Open' })
 vim.keymap.set('n', '<leader>gvc', '<cmd>DiffviewClose<CR>', { desc = 'Git View Close' })
-vim.keymap.set('n', '<leader>gvf', '<cmd>DiffViewFileHistory<CR>', { desc = 'Git View File History' })
+vim.keymap.set('n', '<leader>gvf', '<cmd>DiffviewFileHistory<CR>', { desc = 'Git View File History' })
 
 -- Diagnostic keymaps
 vim.keymap.set('n', '[d', vim.diagnostic.goto_prev, { desc = 'Go to previous [D]iagnostic message' })
