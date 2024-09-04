@@ -50,6 +50,7 @@ return {
         --  All the info you're looking for is in `:help telescope.setup()`
         --
         defaults = {
+          file_ignore_patterns = { '.git/', 'vendor/', 'node_modules/' },
           mappings = {
             -- in normal mode, press d to delete buffer
             n = {
@@ -68,6 +69,7 @@ return {
       -- Enable Telescope extensions if they are installed
       pcall(require('telescope').load_extension, 'fzf')
       pcall(require('telescope').load_extension, 'ui-select')
+      pcall(require('telescope').load_extension, 'dir')
 
       -- See `:help telescope.builtin`
       local builtin = require 'telescope.builtin'
@@ -76,7 +78,8 @@ return {
       vim.keymap.set('n', '<leader>sf', builtin.find_files, { desc = '[S]earch [F]iles' })
       vim.keymap.set('n', '<leader>ss', builtin.builtin, { desc = '[S]earch [S]elect Telescope' })
       vim.keymap.set('n', '<leader>sw', builtin.grep_string, { desc = '[S]earch current [W]ord' })
-      vim.keymap.set('n', '<leader>sg', builtin.live_grep, { desc = '[S]earch by [G]rep' })
+      vim.keymap.set('n', '<leader>sga', builtin.live_grep, { desc = '[S]earch by [G]rep All' })
+      vim.keymap.set('n', '<leader>sgs', '<cmd>Telescope dir live_grep<CR>', { desc = '[S]earch by [G]rep Scoped' })
       vim.keymap.set('n', '<leader>sd', builtin.diagnostics, { desc = '[S]earch [D]iagnostics' })
       vim.keymap.set('n', '<leader>sr', builtin.resume, { desc = '[S]earch [R]esume' })
       vim.keymap.set('n', '<leader>s.', builtin.oldfiles, { desc = '[S]earch Recent Files ("." for repeat)' })
@@ -86,7 +89,7 @@ return {
         -- You can pass additional configuration to Telescope to change the theme, layout, etc.
         builtin.current_buffer_fuzzy_find(require('telescope.themes').get_dropdown {
           winblend = 10,
-          previewer = false,
+          previewer = true,
         })
       end, { desc = '[/] Fuzzily search in current buffer' })
 

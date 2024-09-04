@@ -6,6 +6,7 @@ require('lazy').setup({
   require 'plugins/color-scheme',
   require 'plugins/comment',
   require 'plugins/conform',
+  require 'plugins/dir-telescope',
   require 'plugins/diffview',
   require 'plugins/git-blame',
   require 'plugins/gitsigns',

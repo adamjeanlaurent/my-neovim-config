@@ -24,10 +24,10 @@ return {
       -- set use_icons to true if you have a Nerd Font
       statusline.setup { use_icons = vim.g.have_nerd_font }
 
-      ---@diagnostic disable-next-line: duplicate-set-field
-      statusline.section_filename = function()
-        return vim.fn.expand '%:t'
-      end
+      -- ---@diagnostic disable-next-line: duplicate-set-field
+      -- statusline.section_filename = function()
+      --   return vim.fn.expand '%:t'
+      -- end
 
       -- You can configure sections in the statusline by overriding their
       -- default behavior. For example, here we set the section for
