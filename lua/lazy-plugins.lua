@@ -20,6 +20,7 @@ require('lazy').setup({
   require 'plugins/telescope',
   require 'plugins/todo-comments',
   require 'plugins/treesitter',
+  require 'plugins/treesitter-context',
   require 'plugins/web-devicons',
   require 'plugins/which-key',
 }, {
