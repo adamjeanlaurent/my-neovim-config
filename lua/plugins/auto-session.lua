@@ -15,6 +15,7 @@ return {
     config = function()
       require('auto-session').setup {
         bypass_session_save_file_types = { 'neo-tree' },
+        -- https://github.com/nvim-neo-tree/neo-tree.nvim/issues/400
         pre_save_cmds = {
           close_neo_tree,
         },
