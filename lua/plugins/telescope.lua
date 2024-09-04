@@ -50,6 +50,9 @@ return {
         --  All the info you're looking for is in `:help telescope.setup()`
         --
         defaults = {
+          path_display = {
+            'truncate',
+          },
           file_ignore_patterns = { '.git/', 'vendor/', 'node_modules/' },
           mappings = {
             -- in normal mode, press d to delete buffer
