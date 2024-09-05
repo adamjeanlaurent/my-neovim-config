@@ -15,7 +15,7 @@ return {
         styles = {
           bold = true,
           italic = false,
-          transparency = true,
+          -- transparency = true,
         },
         highlight_groups = {
           ['@function.builtin.lua'] = { italic = false },
@@ -47,7 +47,7 @@ return {
       -- vim.cmd 'highlight LineNr guibg=#1F1F28'
       -- vim.cmd 'highlight SignColumn guibg=#1F1F28'
       -- kanagawa make cursor line darker to match vs code theme
-      vim.cmd 'highlight CursorLine guibg=#2A2A36'
+      -- vim.cmd 'highlight CursorLine guibg=#2A2A36'
 
       vim.cmd.hi 'Comment gui=none'
     end,
