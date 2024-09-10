@@ -7,7 +7,7 @@ return {
           {
             description = 'SourceGraph',
             base_url = 'https://sg.uberinternal.com/code.uber.internal/uber-code/infra-statsdex/-/blob/',
-            anchor = '?L', -- GitHub line anchor
+            anchor = '#L', -- sg line anchor
           },
         },
       }
