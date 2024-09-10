@@ -9,7 +9,7 @@ require('lazy').setup({
   require 'plugins/conform',
   require 'plugins/dir-telescope',
   require 'plugins/diffview',
-  require 'plugins/git-blame',
+  -- require 'plugins/git-blame',
   require 'plugins/gitsigns',
   require 'plugins/harpoon',
   require 'plugins/indent-blankline',
