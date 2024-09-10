@@ -3,6 +3,7 @@ require('lazy').setup({
 
   require 'plugins/auto-session',
   require 'plugins/autopairs',
+  require 'plugins/codebrowser',
   require 'plugins/color-scheme',
   require 'plugins/comment',
   require 'plugins/conform',
