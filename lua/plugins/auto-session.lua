@@ -19,7 +19,7 @@ return {
           close_neo_tree,
         },
         post_restore_cmds = {
-          open_neo_tree,
+          -- open_neo_tree,
         },
       }
     end,

@@ -8,6 +8,23 @@ return {
       'MunifTanjim/nui.nvim',
     },
     opts = {
+      default_component_configs = {
+        git_status = {
+          symbols = {
+            -- Change type
+            added = '', -- NOTE: you can set any of these to an empty string to not show them
+            deleted = '✖',
+            modified = 'm',
+            renamed = '',
+            -- Status type
+            untracked = '',
+            ignored = '',
+            unstaged = 'u',
+            staged = '',
+            conflict = '',
+          },
+        },
+      },
       close_if_last_window = false,
       enable_git_status = true,
       filesystem = {
