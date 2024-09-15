@@ -15,7 +15,7 @@ return {
     end,
   },
   {
-    'rose-pine/neovim',
+    'asilvam133/rose-pine.nvim',
     priority = 1000, -- Ensure this is loaded before other plugins.
     config = function()
       require('rose-pine').setup {
