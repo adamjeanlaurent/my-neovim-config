@@ -18,6 +18,7 @@ require('lazy').setup({
   require 'plugins/neo-tree',
   require 'plugins/noice',
   require 'plugins/nvim-cmp',
+  require 'plugins/osc52',
   require 'plugins/telescope',
   require 'plugins/todo-comments',
   require 'plugins/treesitter',
