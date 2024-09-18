@@ -18,7 +18,7 @@ vim.opt.expandtab = true
 vim.opt.incsearch = true
 
 -- required for bufferline.nvim to work I guess
--- vim.opt.termguicolors = true
+vim.opt.termguicolors = true
 
 -- Make line numbers default
 vim.opt.number = true
