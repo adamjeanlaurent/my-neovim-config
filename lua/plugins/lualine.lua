@@ -8,9 +8,10 @@ return {
         lualine_b = { 'branch', 'diff', 'diagnostics' },
         lualine_c = {},
         lualine_x = { 'harpoon2' },
-        lualine_y = { 'filetype' },
+        lualine_y = { 'location', 'filetype' },
         lualine_z = {},
       },
+      inactive_sections = {},
       winbar = {
         lualine_a = {},
         lualine_b = {},
