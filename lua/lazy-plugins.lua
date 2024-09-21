@@ -17,6 +17,7 @@ require('lazy').setup({
   require 'plugins/indent-blankline',
   require 'plugins/lspconfig',
   require 'plugins/lualine',
+  require 'plugins/incline',
   require 'plugins/mini',
   require 'plugins/neo-tree',
   require 'plugins/noice',
