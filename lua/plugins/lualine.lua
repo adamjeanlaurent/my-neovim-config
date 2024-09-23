@@ -7,7 +7,13 @@ return {
         lualine_a = { 'mode' },
         lualine_b = { 'branch', 'diff', 'diagnostics' },
         lualine_c = {},
-        lualine_x = { 'harpoon2' },
+        lualine_x = {
+          {
+            'harpoon2',
+            indicators = { '1', '2', '3', '4', '5', '6', '7', '8', '9', '10' },
+            active_indicators = { '[1]', '[2]', '[3]', '[4]', '[5]', '[6]', '[7]', '[8]', '[9]', '[10]' },
+          },
+        },
         lualine_y = { 'location', 'filetype' },
         lualine_z = {},
       },
