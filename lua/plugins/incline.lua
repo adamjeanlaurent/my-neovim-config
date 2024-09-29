@@ -11,7 +11,7 @@ return {
             margin = { horizontal = 0 },
           },
           render = function(props)
-            local filename = vim.fn.fnamemodify(vim.api.nvim_buf_get_name(props.buf), ':.')
+            local filename = vim.fn.fnamemodify(vim.api.nvim_buf_get_name(props.buf), ':t')
             if filename == '' then
               filename = '[No Name]'
             end
