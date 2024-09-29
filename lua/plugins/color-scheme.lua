@@ -1,13 +1,13 @@
 return {
   {
-    'catppuccin/nvim',
+    'neanias/everforest-nvim',
     priority = 1000, -- Ensure this is loaded before other plugins.
     config = function()
-      require('catppuccin').setup {
-        -- Add any custom configurations here if needed.
-      }
+      -- require('everforest').setup { -- Add any custom configurations here if needed.
+      --   style = 'multiplex',
+      -- }
 
-      vim.cmd.colorscheme 'catppuccin'
+      vim.cmd.colorscheme 'everforest'
     end,
   },
   -- {
