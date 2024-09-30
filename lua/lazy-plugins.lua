@@ -25,6 +25,7 @@ require('lazy').setup({
   require 'plugins/osc52',
   require 'plugins/telescope',
   require 'plugins/todo-comments',
+  require 'plugins/nvim-tmux-navigation',
   require 'plugins/treesitter',
   require 'plugins/treesitter-context',
   require 'plugins/web-devicons',
