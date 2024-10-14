@@ -61,6 +61,7 @@ return {
       vim.keymap.set('n', '<leader>ss', builtin.builtin, { desc = '[S]earch [S]elect Telescope' })
       vim.keymap.set('n', '<leader>sw', builtin.grep_string, { desc = '[S]earch current [W]ord' })
       vim.keymap.set('n', '<leader>sga', builtin.live_grep, { desc = '[S]earch by [G]rep All' })
+      vim.keymap.set('n', '<leader>sc', '<cmd>Telescope command_history<CR>', { desc = '[S]earch [C]ommand History' })
       vim.keymap.set('n', '<leader>sgs', '<cmd>Telescope dir live_grep<CR>', { desc = '[S]earch by [G]rep Scoped' })
       vim.keymap.set('n', '<leader>sd', builtin.diagnostics, { desc = '[S]earch [D]iagnostics' })
       vim.keymap.set('n', '<leader>sr', builtin.resume, { desc = '[S]earch [R]esume' })
