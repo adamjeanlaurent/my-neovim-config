@@ -11,6 +11,8 @@ vim.keymap.set('n', '<leader>gvo', '<cmd>DiffviewOpen<CR>', { desc = 'Git View O
 vim.keymap.set('n', '<leader>gvc', '<cmd>DiffviewClose<CR>', { desc = 'Git View Close' })
 vim.keymap.set('n', '<leader>gvf', '<cmd>DiffviewFileHistory<CR>', { desc = 'Git View File History' })
 
+vim.keymap.set('n', '<leader>cb', '<cmd>OpenCodeInBrowser<CR>', { desc = 'Open Code In Browser' })
+
 -- Diagnostic keymaps
 vim.keymap.set('n', '[d', vim.diagnostic.goto_prev, { desc = 'Go to previous [D]iagnostic message' })
 vim.keymap.set('n', ']d', vim.diagnostic.goto_next, { desc = 'Go to next [D]iagnostic message' })
