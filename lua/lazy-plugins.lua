@@ -20,6 +20,7 @@ require('lazy').setup({
   require 'plugins/lualine',
   require 'plugins/incline',
   require 'plugins/mini',
+  require 'plugins/neoscroll',
   require 'plugins/neo-tree',
   require 'plugins/noice',
   require 'plugins/nvim-cmp',
