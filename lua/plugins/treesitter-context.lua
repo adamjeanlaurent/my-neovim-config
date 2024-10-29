@@ -1,8 +1,10 @@
 return {
   {
-    -- stick scroll
+    -- sticky scroll
     'nvim-treesitter/nvim-treesitter-context',
-    opts = {},
+    opts = {
+      multiline_threshold = 6,
+    },
   },
 }
 -- vim: ts=2 sts=2 sw=2 et

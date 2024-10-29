@@ -60,7 +60,13 @@ return {
             },
             opts = { skip = true },
           },
-
+          {
+            filter = {
+              event = 'msg_show',
+              find = 'Failed to fetch Bazel configuration',
+            },
+            opts = { skip = true },
+          },
           {
             filter = {
               event = 'msg_show',
