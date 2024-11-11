@@ -3,7 +3,7 @@ return {
     -- sticky scroll
     'nvim-treesitter/nvim-treesitter-context',
     opts = {
-      multiline_threshold = 6,
+      multiline_threshold = 1,
     },
   },
 }
