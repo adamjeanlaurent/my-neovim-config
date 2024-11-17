@@ -7,9 +7,10 @@ vim.keymap.set('n', '<leader>ft', '<cmd>Neotree toggle<CR>')
 vim.keymap.set('n', '<leader>bc', '<cmd>bd<CR>')
 
 -- git view
-vim.keymap.set('n', '<leader>gvo', '<cmd>DiffviewOpen<CR>', { desc = 'Git View Open' })
-vim.keymap.set('n', '<leader>gvc', '<cmd>DiffviewClose<CR>', { desc = 'Git View Close' })
-vim.keymap.set('n', '<leader>gvf', '<cmd>DiffviewFileHistory<CR>', { desc = 'Git View File History' })
+vim.keymap.set('n', '<leader>gvo', '<cmd>DiffviewOpen<CR>', { desc = '[G]it view current diff' })
+vim.keymap.set('n', '<leader>gvc', '<cmd>DiffviewClose<CR>', { desc = '[G]it view Close' })
+vim.keymap.set('n', '<leader>gvp', '<cmd>DiffviewFileHistory<CR>', { desc = '[G]it view project history' })
+vim.keymap.set('n', '<leader>gvf', '<cmd>DiffviewFileHistory %<CR>', { desc = '[G]it view file history' })
 
 vim.keymap.set('n', '<leader>cb', '<cmd>OpenCodeInBrowser<CR>', { desc = 'Open Code In Browser' })
 
