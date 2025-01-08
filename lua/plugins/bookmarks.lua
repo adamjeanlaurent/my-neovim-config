@@ -7,7 +7,7 @@ return {
     branch = 'main',
     dependencies = { 'nvim-web-devicons' },
     config = function()
-      require('bookmarks').setup()
+      require('bookmarks').setup { keymap = { add = '<leader>z' } }
       require('telescope').load_extension 'bookmarks'
     end,
   },
