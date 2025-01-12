@@ -27,6 +27,7 @@ require('lazy').setup({
   require 'plugins/nvim-cmp',
   require 'plugins/osc52',
   require 'plugins/telescope',
+  require 'plugins/tag-auto-close',
   require 'plugins/todo-comments',
   require 'plugins/nvim-tmux-navigation',
   require 'plugins/treesitter',
