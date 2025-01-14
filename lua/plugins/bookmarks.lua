@@ -3,6 +3,7 @@ return {
     'crusj/bookmarks.nvim',
     keys = {
       { '<tab><tab>', mode = { 'n' } },
+      { '<leader>z', mode = { 'n' } }, -- Ensure the keybinding is declared here
     },
     branch = 'main',
     dependencies = { 'nvim-web-devicons' },
