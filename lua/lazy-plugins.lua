@@ -35,6 +35,7 @@ require('lazy').setup({
   require 'plugins/treesitter-context',
   require 'plugins/web-devicons',
   require 'plugins/which-key',
+  require 'plugins/markdownviewer',
 }, {
   ui = {
     icons = {},
