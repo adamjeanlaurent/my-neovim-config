@@ -3,9 +3,6 @@ vim.keymap.set('n', '<Esc>', '<cmd>nohlsearch<CR>')
 -- Open/close file explorer
 vim.keymap.set('n', '<leader>ft', '<cmd>Neotree toggle<CR>')
 
--- close buffer
-vim.keymap.set('n', '<leader>bc', '<cmd>bd<CR>')
-
 -- git view
 vim.keymap.set('n', '<leader>gvo', '<cmd>DiffviewOpen<CR>', { desc = '[G]it view current diff' })
 vim.keymap.set('n', '<leader>gvc', '<cmd>DiffviewClose<CR>', { desc = '[G]it view Close' })
