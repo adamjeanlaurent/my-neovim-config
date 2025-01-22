@@ -118,6 +118,7 @@ return {
       local servers = {
         clangd = {},
         gopls = {},
+        bashls = {},
 
         starpls = {
           filetypes = { 'starlark' },
