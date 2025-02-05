@@ -16,17 +16,17 @@ return {
               filename = '[No Name]'
             end
             local ft_icon, ft_color = devicons.get_icon_color(filename)
-            local darkgreen = '#404E45'
-            local lightgreen = '#7FBB8F'
+            local darkgreen = '#3d484d'
+            local lightgreen = '#83c092'
             ft_color = lightgreen
             local modified = vim.bo[props.buf].modified
             return {
               ft_icon and { ' ', ft_icon, ' ', guibg = ft_color, guifg = helpers.contrast_color(ft_color) } or '',
               ' ',
-              { filename, gui = modified and 'bold,italic' or 'bold' },
+              { filename, gui = modified and 'italic' or 'bold' },
               ' ',
               guibg = darkgreen,
-              guifg = '#FFFFFF',
+              guifg = '#d3c6aa',
             }
           end,
         }

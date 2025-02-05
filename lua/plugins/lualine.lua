@@ -14,7 +14,7 @@ return {
             active_indicators = { '[1]', '[2]', '[3]', '[4]', '[5]', '[6]', '[7]', '[8]', '[9]', '[10]' },
           },
         },
-        lualine_y = { 'location', 'filetype' },
+        -- lualine_y = { 'location', 'filetype' },
         lualine_z = {},
       },
       inactive_sections = {},
