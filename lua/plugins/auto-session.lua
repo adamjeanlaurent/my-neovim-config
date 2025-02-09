@@ -3,10 +3,6 @@ local function close_neo_tree()
   vim.notify 'closed all'
 end
 
-local function open_neo_tree()
-  require('neo-tree.sources.manager').show 'filesystem'
-end
-
 return {
   {
     'rmagatti/auto-session',
@@ -17,9 +13,6 @@ return {
         -- https://github.com/nvim-neo-tree/neo-tree.nvim/issues/400
         pre_save_cmds = {
           close_neo_tree,
-        },
-        post_restore_cmds = {
-          -- open_neo_tree,
         },
       }
     end,

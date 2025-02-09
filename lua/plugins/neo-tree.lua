@@ -33,7 +33,6 @@ return {
         },
         follow_current_file = {
           enabled = true,
-          -- leave_dirs_open = true, -- honestly dunno what this does
         },
       },
     },

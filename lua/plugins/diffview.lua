@@ -5,11 +5,6 @@ return {
       diff_binaries = false,
       use_icons = true,
       enhanced_diff_hl = true,
-      -- view = {
-      --   default = {
-      --     layout = 'diff2_vertical',
-      --   },
-      -- },
     },
   },
 }
