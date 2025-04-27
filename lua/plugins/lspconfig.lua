@@ -127,7 +127,19 @@ return {
           end,
         },
 
-        pyright = {},
+        pyright = {
+          settings = {
+            python = {
+              analysis = {
+                typeCheckingMode = 'basic', -- or "basic"
+                diagnosticSeverityOverrides = {
+                  reportOptionalOperand = 'none',
+                  reportAttributeAccessIssue = 'none',
+                },
+              },
+            },
+          },
+        },
         -- rust_analyzer = {},
         -- tsserver = {},
         -- ts_ls = {},

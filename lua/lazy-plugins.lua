@@ -1,7 +1,6 @@
 require('lazy').setup({
   'tpope/vim-sleuth', -- Detect tabstop and shiftwidth automatically
 
-  require 'plugins/auto-session',
   require 'plugins/autopairs',
   require 'plugins/bookmarks',
   require 'plugins/codebrowser',
@@ -26,7 +25,6 @@ require('lazy').setup({
   require 'plugins/nvim-cmp',
   require 'plugins/telescope',
   require 'plugins/dooing',
-  -- require 'plugins/tag-auto-close',
   require 'plugins/todo-comments',
   require 'plugins/nvim-tmux-navigation',
   require 'plugins/treesitter',
