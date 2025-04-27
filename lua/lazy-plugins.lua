@@ -1,13 +1,13 @@
-require('lazy').setup({
-  'tpope/vim-sleuth', -- Detect tabstop and shiftwidth automatically
+enable_ai_featues = false
 
+local plugins = {
+  'tpope/vim-sleuth', -- Detect tabstop and shiftwidth automatically
   require 'plugins/autopairs',
   require 'plugins/bookmarks',
   require 'plugins/codebrowser',
   require 'plugins/color-scheme',
   require 'plugins/comment',
   require 'plugins/conform',
-  require 'plugins/copilot',
   require 'plugins/dir-telescope',
   require 'plugins/diffview',
   require 'plugins/gitsigns',
@@ -32,7 +32,13 @@ require('lazy').setup({
   require 'plugins/web-devicons',
   require 'plugins/which-key',
   require 'plugins/markdownviewer',
-}, {
+}
+
+if enable_ai_featues then
+  table.insert(plugins, 'plugins/copilot')
+end
+
+require('lazy').setup(plugins, {
   ui = {
     icons = {},
   },
