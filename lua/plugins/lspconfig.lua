@@ -117,7 +117,19 @@ return {
       capabilities = vim.tbl_deep_extend('force', capabilities, require('cmp_nvim_lsp').default_capabilities())
       local servers = {
         clangd = {},
-        gopls = {},
+        gopls = {
+          flags = {
+            debounce_text_changes = 800, -- ms to wait after edits before sending
+            allow_incremental_sync = true,
+          },
+          settings = {
+            gopls = {
+              directoryFilters = {
+                '-vendor',
+              },
+            },
+          },
+        },
         bashls = {},
 
         starpls = {
