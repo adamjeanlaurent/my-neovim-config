@@ -28,7 +28,7 @@ return {
           path_display = {
             'truncate',
           },
-          file_ignore_patterns = { '.git/', 'node_modules/', 'idl/', 'usr/' },
+          file_ignore_patterns = { '.git/', 'node_modules/', 'idl/', 'usr/', 'git/', 'vendor/' },
           mappings = {
             -- in normal mode, press d to delete buffer
             n = {
