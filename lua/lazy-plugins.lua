@@ -13,7 +13,6 @@ local plugins = {
   require 'plugins/gitsigns',
   require 'plugins/harpoon',
   require 'plugins/harpoon-lualine',
-  require 'plugins/hop',
   require 'plugins/indent-blankline',
   require 'plugins/lspconfig',
   require 'plugins/lualine',
