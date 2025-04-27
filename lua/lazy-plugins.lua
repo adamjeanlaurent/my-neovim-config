@@ -1,4 +1,4 @@
-enable_ai_featues = false
+local enable_ai_features = false
 
 local plugins = {
   'tpope/vim-sleuth', -- Detect tabstop and shiftwidth automatically
@@ -33,9 +33,13 @@ local plugins = {
   require 'plugins/markdownviewer',
 }
 
-if enable_ai_featues then
-  table.insert(plugins, 'plugins/copilot')
-  table.insert(plugins, 'plugins/avanate')
+local ai_plugins = {
+  require 'plugins/copilot',
+  require 'plugins/avante',
+}
+
+if enable_ai_features then
+  vim.list_extend(plugins, ai_plugins)
 end
 
 require('lazy').setup(plugins, {
