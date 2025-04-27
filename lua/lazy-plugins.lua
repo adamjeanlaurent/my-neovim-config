@@ -35,6 +35,7 @@ local plugins = {
 
 if enable_ai_featues then
   table.insert(plugins, 'plugins/copilot')
+  table.insert(plugins, 'plugins/avanate')
 end
 
 require('lazy').setup(plugins, {
