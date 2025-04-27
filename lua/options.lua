@@ -77,4 +77,15 @@ vim.opt.scrolloff = 10
 -- Set highlight on search, but clear on pressing <Esc> in normal mode
 vim.opt.hlsearch = true
 
+vim.opt.diffopt = {
+  'internal',
+  'filler',
+  'closeoff',
+  'context:12',
+  'algorithm:histogram',
+  'linematch:200',
+  'indent-heuristic',
+  'iwhite', -- I toggle this one, it doesn't fit all cases.
+}
+
 -- vim: ts=2 sts=2 sw=2 et

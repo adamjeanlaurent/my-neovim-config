@@ -1,10 +1,17 @@
 return {
   {
     'sindrets/diffview.nvim',
+    cmd = {
+      'DiffviewOpen',
+      'DiffviewClose',
+      'DiffviewToggleFiles',
+      'DiffviewRefresh',
+      'DiffviewFileHistory',
+    },
     opts = {
       diff_binaries = false,
-      use_icons = true,
-      enhanced_diff_hl = true,
+      use_icons = false,
+      enhanced_diff_hl = false,
     },
   },
 }
