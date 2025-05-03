@@ -17,6 +17,7 @@ local plugins = {
   require 'plugins/lspconfig',
   require 'plugins/lualine',
   require 'plugins/incline',
+  require 'plugins/maple',
   require 'plugins/mini',
   require 'plugins/neoscroll',
   require 'plugins/neo-tree',
